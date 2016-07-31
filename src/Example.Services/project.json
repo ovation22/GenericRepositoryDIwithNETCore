@@ -1,0 +1,17 @@
+{
+  "version": "1.0.0-*",
+
+  "dependencies": {
+    "Example.Dto": "1.0.0-*",
+    "Example.Models": "1.0.0-*",
+    "Example.Repositories.Interfaces": "1.0.0-*",
+    "Example.Services.Interfaces": "1.0.0-*",
+    "NETStandard.Library": "1.6.0"
+  },
+
+  "frameworks": {
+    "netstandard1.6": {
+      "imports": "dnxcore50"
+    }
+  }
+}

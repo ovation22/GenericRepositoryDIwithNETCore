@@ -1,0 +1,47 @@
+﻿@model IEnumerable<Example.Web.Models.HorseSummary>
+@{
+    ViewBag.Title = "Horses";
+}
+<h2>@ViewBag.Title</h2>
+<h3>@ViewBag.Message</h3>
+
+@if (Model != null)
+{
+    <table class="table table-bordered table-striped">
+        <thead>
+            <tr>
+                <th class="col-md-4">Name</th>
+                <th class="col-md-2">Starts</th>
+                <th class="col-md-1">Win</th>
+                <th class="col-md-1">Place</th>
+                <th class="col-md-1">Show</th>
+                <th class="col-md-3">Earnings</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Name)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Starts)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Win)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Place)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Show)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Earnings)
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}
