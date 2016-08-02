@@ -41,7 +41,7 @@ namespace Example.Repositories
 
         private void Save()
         {
-            Context.SaveChangesAsync();
+            Context.SaveChanges();
         }
     }
 }
