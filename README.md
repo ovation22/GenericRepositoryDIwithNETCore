@@ -1,6 +1,6 @@
 # GenericRepositoryDIwithNETCore
 
-Generic Repository and Dependency Injection with .NET Core is an example solution showing hot to wire up a Generic Repository and EF Core using Dependency Injection.
+Generic Repository and Dependency Injection with .NET Core is an example solution showing how to wire up a Generic Repository and EF Core using Dependency Injection.
 
 ## Prerequisite
 - Visual Studio 2015 Update 3
